@@ -19,7 +19,7 @@ import model.WelcomeService;
  *
  * @author kanst_000
  */
-@WebServlet(name = "processRequest", urlPatterns = {"/processRequest"})
+@WebServlet(name = "processRequest", urlPatterns = {"/greeter"})
 public class WelcomeController extends HttpServlet {
     private static final String RESULT_PAGE = "greeter.jsp";
 
