@@ -20,7 +20,7 @@ import model.WelcomeService;
  * @author kanst_000
  */
 @WebServlet(name = "processRequest", urlPatterns = {"/processRequest"})
-public class processRequest extends HttpServlet {
+public class WelcomeController extends HttpServlet {
     private static final String RESULT_PAGE = "greeter.jsp";
 
     /**
@@ -34,7 +34,7 @@ public class processRequest extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
+        response.setContentType("text/html");
         
         String name = request.getParameter("name");
         
